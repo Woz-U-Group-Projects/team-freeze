@@ -1,6 +1,4 @@
 <<<<<<< HEAD
-CREATE DATABASE  IF NOT EXISTS `sakila` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `sakila`;
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: sakila
@@ -19,29 +17,33 @@ USE `sakila`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `course`
+-- Table structure for table `student`
 --
 
-DROP TABLE IF EXISTS `course`;
+DROP TABLE IF EXISTS `student`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `course` (
-  `course_id` int(11) NOT NULL,
-  `course_name` varchar(45) NOT NULL,
-  `course_grade` varchar(45) NOT NULL,
-  `teacher_id` varchar(45) NOT NULL,
-  PRIMARY KEY (`course_id`),
-  UNIQUE KEY `course_id_UNIQUE` (`course_id`)
+CREATE TABLE `student` (
+  `student_id` int(11) NOT NULL,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `grade_in` varchar(45) NOT NULL,
+  `class_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`student_id`),
+  UNIQUE KEY `idstudent_UNIQUE` (`student_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `course`
+-- Dumping data for table `student`
 --
 
-LOCK TABLES `course` WRITE;
-/*!40000 ALTER TABLE `course` DISABLE KEYS */;
-/*!40000 ALTER TABLE `course` ENABLE KEYS */;
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` VALUES (1,'John','Smith','Jsmith1','student1','4','100');
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -53,10 +55,8 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-14 11:30:37
+-- Dump completed on 2020-05-14 21:10:29
 =======
-CREATE DATABASE  IF NOT EXISTS `sakila` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `sakila`;
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: sakila
@@ -75,29 +75,33 @@ USE `sakila`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `course`
+-- Table structure for table `student`
 --
 
-DROP TABLE IF EXISTS `course`;
+DROP TABLE IF EXISTS `student`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
-CREATE TABLE `course` (
-  `course_id` int(11) NOT NULL,
-  `course_name` varchar(45) NOT NULL,
-  `course_grade` varchar(45) NOT NULL,
-  `teacher_id` varchar(45) NOT NULL,
-  PRIMARY KEY (`course_id`),
-  UNIQUE KEY `course_id_UNIQUE` (`course_id`)
+CREATE TABLE `student` (
+  `student_id` int(11) NOT NULL,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `user_name` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `grade_in` varchar(45) NOT NULL,
+  `class_id` varchar(45) NOT NULL,
+  PRIMARY KEY (`student_id`),
+  UNIQUE KEY `idstudent_UNIQUE` (`student_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `course`
+-- Dumping data for table `student`
 --
 
-LOCK TABLES `course` WRITE;
-/*!40000 ALTER TABLE `course` DISABLE KEYS */;
-/*!40000 ALTER TABLE `course` ENABLE KEYS */;
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` VALUES (1,'John','Smith','Jsmith1','student1','4','100');
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -109,5 +113,5 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-05-14 11:30:37
->>>>>>> 22c28701a5a694234905a6d455056e92fb64bcb6
+-- Dump completed on 2020-05-14 21:10:29
+>>>>>>> 84afab70f69a5ccdb90c93b9a78fe56c9e6c7627
