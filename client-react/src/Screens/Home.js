@@ -32,8 +32,18 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className ='home'>
                 <h2>Home</h2>
+                <p>Welcome to the School Lesson tracking portal</p>
+                <br></br>
+                <form>
+                    <input type="text" name="username" placeholder="User Name"></input><br></br>
+                    <input type="text" name="password" placeholder="Password"></input><br></br>
+                    <button type="submit">Submit Me</button> <button
+                </form>
+                
+
+
             </div>
         )
     }
