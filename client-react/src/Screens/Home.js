@@ -41,7 +41,7 @@ class Home extends React.Component {
         return (
             <div className='home'>
                 <h2>Home</h2>
-                <p>Welcome to the School Lesson tracking portal</p>
+                <p>Welcome to the At Home Learning  portal</p>
                 <div>
                     <div>
                         {/* <label htmlFor="username">Username:</label> */}
