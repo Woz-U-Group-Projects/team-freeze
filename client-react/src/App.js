@@ -16,6 +16,7 @@ import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 //   );
 // }
 
+//function to load the titile bar 
 function App() {
   return (
     <Router>
@@ -23,12 +24,15 @@ function App() {
         <ul className="header" ><li>
           <Link to="/">Home</Link>
         </li>
-          <li>
+          {/* <li>
             <Link to="/Login">Login</Link>
-          </li>
-          <li>
+          </li>*/}
+          {/* <li>
             <Link to="/Registration">Registration</Link>
-          </li>
+          </li>  */}
+          <li>
+            <Link to="/">Log Off</Link>
+          </li> */
         </ul>
 
         <Route exact path='/' component={Home} />
