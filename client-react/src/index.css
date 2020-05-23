@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-/* ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -35,5 +35,11 @@ li a {
 
 li a:hover {
   background-color: #111111;
-} */
+}
 
+.register {
+  display: auto;
+  flex: auto;
+  align-items: center;
+  align-content: center;
+}
