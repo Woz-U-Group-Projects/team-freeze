@@ -1,16 +1,10 @@
 import React from 'react';
 import axios from "axios";
-<<<<<<< HEAD
-=======
-// import CreateLesson from './CreateLesson'
-// import CurrentLessonPlan from './CurrentLessonPlan'
-// import Gradebook from './Gradebook'
 import { 
     // BrowserRouter as Router, 
     Link, 
     // Route 
 } from "react-router-dom";
->>>>>>> update-teacher-page
 
 
 
@@ -39,19 +33,6 @@ class Teacher extends React.Component {
         axios.get(url).then(response => this.setState({ teacher: response.data }));
     };
 
-<<<<<<< HEAD
-    render() {
-        return(
-            <div>
-                <h2>Teacher Page</h2>
-            </div>
-
-        )
-
-    }
-}
-
-=======
 
     render() {
 
@@ -80,8 +61,7 @@ class Teacher extends React.Component {
                     </ul>
                 </div>
                 <div className='center'>
-                    <h2>Teacher Page</h2>
-
+                    <h2>Grade Book</h2>
                 </div>
             </div>
         )
@@ -89,5 +69,4 @@ class Teacher extends React.Component {
 }
 
 
->>>>>>> update-teacher-page
 export default Teacher;
