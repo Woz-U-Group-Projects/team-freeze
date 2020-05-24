@@ -4,6 +4,7 @@ import "./App.css";
 import Home from './Screens/Home'
 import Login from './Screens/Login'
 import Registration from './Screens/Registration'
+import Student from './Screens/Student'
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 
@@ -38,6 +39,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path='/Login' component={Login} />
         <Route path='/Registration' component={Registration} />
+        <Route path='/Student' component={Student} />
 
       </div>
     </Router>
