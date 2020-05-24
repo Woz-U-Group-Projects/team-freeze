@@ -12,6 +12,8 @@ import {BrowserRouter as Router,
   // Link,
   Route
   } from "react-router-dom";
+import Student from './Screens/Student'
+import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 
 
@@ -52,6 +54,7 @@ function App() {
         <Route path='/CreateLesson' component={CreateLesson} />
         <Route path='/CurrentLessonPlan' component={CurrentLessonPlan} />
         <Route path='/Gradebook' component={Gradebook} />
+        <Route path='/Student' component={Student} />
 
       </div>
     </Router>
