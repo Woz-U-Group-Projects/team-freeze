@@ -3,20 +3,21 @@
   flex: auto;
   text-align: center;
   align-self: center;
-  /* align-items: center;
-  align-content: center; */
 }
+
 .login {
   display: auto;
   flex: auto;
   text-align: center;
-  /* align-items: center;
-  align-content: center; */
 }
+
 .home {
-      text-align: center;
-  
+      text-align: center;  
 }
+.center {
+  text-align: center;  
+}
+
 ul {
   list-style-type: none;
   margin: 0;
