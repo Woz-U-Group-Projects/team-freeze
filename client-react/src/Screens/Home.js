@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from "axios";
 // import Registration from './Registration'
-import { 
+import {
     // BrowserRouter as Router, 
-     Link, 
+    Link,
     //  Route
-     } from "react-router-dom";
+} from "react-router-dom";
 // import "../home.min.css";
 
 
@@ -43,54 +43,42 @@ class Home extends React.Component {
     render() {
 
         return (
-<<<<<<< HEAD
             <div className='home'>
-                <h2>Home</h2>
-                <p>Welcome to the At Home Learning  portal</p>
-                <div>
-                    <div>
-                        {/* <label htmlFor="username">Username:</label> */}
-                        <input type="text" id="username" name="username" placeholder="User Name" onChange={this.props.onUsernameChange} />
-                    </div>
-=======
-            <div>
                 <ul className="header" >
                     <li>
                         <Link to="/">Home</Link>
                     </li>
                     {/* <li>
                         <Link to="/Login">Login</Link>
-                    </li> */}
+                        </li> */}
                     {/* <li>
-                        <Link to="/Registration">Registration</Link>
-                    </li> */}
+                         <Link to="/Registration">Registration</Link>
+                        </li> */}
                     <li>
                         <Link to="/">Log Off</Link>
                     </li>
                 </ul>
->>>>>>> update-teacher-page
 
-                <div className='center'>
-                    <h2>Home</h2>
-                    <p>Welcome to the School Lesson tracking portal</p>
+                <h2>Home</h2>
+                <p>Welcome to the At Home Learning  portal</p>
+                <div>
+
                     <div>
-                        <div>
-                            {/* <label htmlFor="username">Username:</label> */}
-                            <input type="text" id="username" name="username" placeholder="User Name" onChange={this.props.onUsernameChange} />
-                        </div>
-
-                        <div>
-                            {/* <label htmlFor="password">Password:</label> */}
-                            <input type="password" id="password" name="password" placeholder="Password" onChange={this.props.onPasswordChange} />
-                        </div>
-                        <br></br>
-                        <div>
-                            <button onClick={this.props.onLogin}>Submit</button>
-                            <button onClick={this.register}>Register</button>
-                        </div>
+                        {/* <label htmlFor="username">Username:</label> */}
+                        <input type="text" id="username" name="username" placeholder="User Name" onChange={this.props.onUsernameChange} />
+                    </div>
+                    <div>
+                        {/* <label htmlFor="password">Password:</label> */}
+                        <input type="password" id="password" name="password" placeholder="Password" onChange={this.props.onPasswordChange} />
+                    </div>
+                    <br></br>
+                    <div>
+                        <button onClick={this.props.onLogin}>Submit</button>
+                        <button onClick={this.register}>Register</button>
                     </div>
                 </div>
             </div>
+
         )
     }
 }

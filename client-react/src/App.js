@@ -8,12 +8,11 @@ import Teacher from './Screens/Teacher'
 import CreateLesson from './Screens/CreateLesson'
 import CurrentLessonPlan from './Screens/CurrentLessonPlan'
 import Gradebook from './Screens/Gradebook'
+import Student from './Screens/Student'
 import {BrowserRouter as Router, 
   // Link,
   Route
   } from "react-router-dom";
-import Student from './Screens/Student'
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 
 
