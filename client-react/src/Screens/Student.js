@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from "axios";
+import {
+    // BrowserRouter as Router, 
+    Link,
+    //  Route
+} from "react-router-dom";
 
 class Student extends React.Component {
     constructor(props) {
@@ -29,9 +34,25 @@ class Student extends React.Component {
     render() {
         return (
             //create a student dashboard 
-            <div className="student">
+            <div className="center">
+                <ul className="header" >
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        {/* <li>
+                        <Link to="/Login">Login</Link>
+                        </li> */}
+                        {/* <li>
+                         <Link to="/Registration">Registration</Link>
+                        </li> */}
+                        <li>
+                            <Link to="/">Log Off</Link>
+                        </li>
+                    </ul>
                 <h2>Student Page</h2>
                 <h3>Welcome to The School Lesson Tracking Portal</h3>
+
+                
             </div>
         )
     }

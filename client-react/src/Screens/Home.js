@@ -41,45 +41,51 @@ class Home extends React.Component {
 
 
     render() {
-
-        return (
-            <div className='home'>
-                <ul className="header" >
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    {/* <li>
+        if (!this.props.token || this.props.token === "") {
+            return (
+                <div className='center'>
+                    <ul className="header" >
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        {/* <li>
                         <Link to="/Login">Login</Link>
                         </li> */}
-                    {/* <li>
+                        {/* <li>
                          <Link to="/Registration">Registration</Link>
                         </li> */}
-                    <li>
-                        <Link to="/">Log Off</Link>
-                    </li>
-                </ul>
+                        <li>
+                            <Link to="/">Log Off</Link>
+                        </li>
+                    </ul>
+                    
 
-                <h2>Home</h2>
-                <p>Welcome to the At Home Learning  portal</p>
-                <div>
+                    <h2>Home</h2>
+                    <p>Welcome to the At Home Learning  portal</p>
+
 
                     <div>
-                        {/* <label htmlFor="username">Username:</label> */}
-                        <input type="text" id="username" name="username" placeholder="User Name" onChange={this.props.onUsernameChange} />
-                    </div>
-                    <div>
-                        {/* <label htmlFor="password">Password:</label> */}
-                        <input type="password" id="password" name="password" placeholder="Password" onChange={this.props.onPasswordChange} />
-                    </div>
-                    <br></br>
-                    <div>
-                        <button onClick={this.props.onLogin}>Submit</button>
-                        <button onClick={this.register}>Register</button>
+                        <div>
+                            {/* <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div> */}
+                            <div>
+                                <label htmlFor="username">Username:</label>
+                                <input type="text" id="username" name="username" onChange={this.props.onUsernameChange} />
+                            </div>
+                            <div>
+                                <label htmlFor="password">Password:</label>
+                                <input type="password" id="password" name="password" onChange={this.props.onPasswordChange} />
+                            </div>
+                            <div>
+                                <button onClick={this.props.onLogin}>Submit</button>
+                                <button onClick={this.register}>Register</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        )
+
+            )
+        } else { return(<div>Logged In</div>); }
     }
 }
 

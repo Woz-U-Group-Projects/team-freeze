@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from "axios";
-import { 
-  // BrowserRouter as Router, 
-  Link, 
+import {
+  BrowserRouter as Router, 
+  Link
   // Route 
 } from "react-router-dom";
 
@@ -33,55 +33,53 @@ class Login extends React.Component {
 
 
   render() {
-    // return (
-    //     <div className="login">
-    //         {/* create form to log on}
-    //         {/* <Header /> */}
-    //         <h2>Login</h2>                
-    //         <form>
-    //             <input type="text" name="username" placeholder="User Name"></input><br></br>
-    //             <input type="text" name="password" placeholder="Password"></input><br></br>
-    //             <button type="submit">Submit Me</button>
-    //         </form>
-
-    //     </div>
-    // )
 
     return (
+
       <div>
+        <Router>
         <ul className="header" >
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
           {/* <li>
             <Link to="/Login">Login</Link>
           </li> */}
           {/* <li>
             <Link to="/Registration">Registration</Link>
           </li> */}
-          <li>
+          {/* <li>
             <Link to="/">Log Off</Link>
-          </li>
+          </li> */}
         </ul>
+        </Router>
 
-        <div className="center">
-          <div>
-            <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="username" onChange={this.props.onUsernameChange} />
-          </div>
-          <div>
-            <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" onChange={this.props.onPasswordChange} />
-          </div>
-          <div>
-            <button onClick={this.props.onLogin}>Submit</button>
-          </div>
-        </div>
+        {/* <div className="center">
+            if (!this.props.token || this.props.token === "") {
+
+              <div>
+                <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div>
+                <div>
+                  <label htmlFor="username">Username:</label>
+                  <input type="text" id="username" name="username" onChange={this.props.onUsernameChange} />
+                </div>
+                <div>
+                  <label htmlFor="password">Password:</label>
+                  <input type="password" id="password" name="password" onChange={this.props.onPasswordChange} />
+                </div>
+                <div>
+                  <button onClick={this.props.onLogin}>Submit</button>
+                </div>
+              </div>
+
+            } else {(<div>Logged In</div>)} */}
       </div>
-    );
 
+
+    );
   }
 }
+
 
 
 export default Login;
