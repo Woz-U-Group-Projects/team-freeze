@@ -5,6 +5,7 @@ import Home from './Screens/Home'
 import Login from './Screens/Login'
 import Registration from './Screens/Registration'
 import Student from './Screens/Student'
+import StudentProfile from './Screens/StudentProfile'
 import {BrowserRouter as Router, Link, Route} from "react-router-dom";
 
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/Login' component={Login} />
         <Route path='/Registration' component={Registration} />
         <Route path='/Student' component={Student} />
+        <Route path='/StudentProfile' component={StudentProfile} />
 
       </div>
     </Router>
