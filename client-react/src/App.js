@@ -16,6 +16,9 @@ import {
 import Values from './Values';
 import StudentProfile from './Screens/StudentProfile'
 
+
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -39,6 +42,7 @@ class App extends React.Component {
 
   onUsernameChange = (e) => this.setState({ ...this.state, username: e.target.value });
   onPasswordChange = (e) => this.setState({ ...this.state, password: e.target.value });
+     
 
   onGetValues = () => {
     fetch("http://localhost:8080/api/values", {
@@ -47,7 +51,7 @@ class App extends React.Component {
       .then(res => res.json())
       .then(json => this.setState({ ...this.state, values: json }));
   }
-  //function to load the titile bar 
+  //function to load the title bar 
   // function App() {
   render() {
     return (
@@ -71,11 +75,12 @@ class App extends React.Component {
           <Route path='/CurrentLessonPlan' component={CurrentLessonPlan} />
           <Route path='/Gradebook' component={Gradebook} />
           <Route path='/Student' component={Student} />
+          <Route path='/StudentProfile' component={StudentProfile} />
         </Router>
       </div>
     );
 
-        <Route path='/StudentProfile' component={StudentProfile} />
+  }
 }
 
 
