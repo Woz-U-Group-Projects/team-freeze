@@ -14,6 +14,7 @@ import {
   Route
 } from "react-router-dom";
 import Values from './Values';
+import StudentProfile from './Screens/StudentProfile'
 
 class App extends React.Component {
   constructor(props) {
@@ -74,7 +75,7 @@ class App extends React.Component {
       </div>
     );
 
-  }
+        <Route path='/StudentProfile' component={StudentProfile} />
 }
 
 
