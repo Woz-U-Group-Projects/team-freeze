@@ -57,8 +57,7 @@ class Home extends React.Component {
                         <li>
                             <Link to="/">Log Off</Link>
                         </li>
-                    </ul>
-                    
+                    </ul>                    
 
                     <h2>Home</h2>
                     <p>Welcome to the At Home Learning  portal</p>
