@@ -15,6 +15,7 @@ import {
 } from "react-router-dom";
 import Values from './Values';
 import StudentProfile from './Screens/StudentProfile'
+import Parent from './Screens/Parent'
 
 
 
@@ -76,6 +77,7 @@ class App extends React.Component {
           <Route path='/Gradebook' component={Gradebook} />
           <Route path='/Student' component={Student} />
           <Route path='/StudentProfile' component={StudentProfile} />
+          <Route path='/Parent' component={Parent} />
         </Router>
       </div>
     );
