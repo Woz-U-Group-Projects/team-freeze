@@ -5,7 +5,7 @@ import {
     Link, 
     // Route 
 } from "react-router-dom";
-//import user component
+
 
 
 class Registration extends React.Component {
@@ -32,7 +32,7 @@ class Registration extends React.Component {
         axios.get(url).then(response => this.setState({ registration: response.data }));
     };
 
-    
+    //
     render() {
         return (
             <div>
@@ -51,11 +51,8 @@ class Registration extends React.Component {
                     </li>
                 </ul>
 
-
-                {/* render user component < User/> */}
-                
                 {/* create a form to register uesrs  */}
-                {/* <div className="center">
+                <div className="center">
                     <h2>Registration</h2>
                     <p>To Register, Please complete the below Items.</p>
                     <form >
@@ -81,12 +78,12 @@ class Registration extends React.Component {
                         {/* <input placeholder="Last Name"></input><br></br> */}
                         {/* <input placeholder="User Name"></input><br></br> */}
                         {/* <input placeholder="Password"></input><br></br> */}
-                        {/* <input type="submit" value="register" />
+                        <input type="submit" value="register" />
 
-                    </form> */}
+                    </form>
 
 
-                {/* </div> */}
+                </div>
 
             </div>
         )
