@@ -24,7 +24,7 @@ class User extends React.Component {
         axios.get(url).then(response => this.setState({ user: response.data }));
     };
 
-    addUserk = () => {
+    addUser = () => {
         let url = "http://localhost:8080/users";
         axios.post(url, { name: this.username.current.value }).then(response => { 
             // refresh the data
