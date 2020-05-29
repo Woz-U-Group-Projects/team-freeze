@@ -1,6 +1,5 @@
 package com.example.groupproject.auth;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.servlet.*;
@@ -13,11 +12,11 @@ import com.auth0.jwt.algorithms.Algorithm;
 
 import static com.example.groupproject.auth.AuthConstants.*;
 
-
 public class JWTAuthorizationFilter extends BasicAuthenticationFilter {
   public JWTAuthorizationFilter(AuthenticationManager authenticationManager) {
     super(authenticationManager);
   }
+  
   @Override
   protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
     String header = req.getHeader(HEADER_STRING);

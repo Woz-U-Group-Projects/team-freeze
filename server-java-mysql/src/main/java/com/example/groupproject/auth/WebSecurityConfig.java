@@ -1,10 +1,12 @@
 package com.example.groupproject.auth;
 
+import static com.example.groupproject.auth.AuthConstants.*;
 
 import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -17,14 +19,8 @@ import com.example.groupproject.auth.JWTAuthenticationFilter;
 import com.example.groupproject.auth.JWTAuthorizationFilter;
 import com.example.groupproject.auth.MySQLUserDetailsService;
 
-
-
-import static com.example.groupproject.auth.AuthConstants.*;
-
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-	
-	
   @Autowired
   private MySQLUserDetailsService mySQLUserDetailsService;
 
