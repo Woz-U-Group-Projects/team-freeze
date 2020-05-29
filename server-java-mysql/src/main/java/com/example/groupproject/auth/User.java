@@ -3,7 +3,11 @@ package com.example.groupproject.auth;
 import javax.persistence.*;
 
 @Entity
+<<<<<<< HEAD
 @Table(name ="user")
+=======
+@Table(name="user")
+>>>>>>> 8f0cf13285fd0a897025b2622f452b22b8a5b357
 public class User {
 	@Id
 	@Column(name = "userid")
