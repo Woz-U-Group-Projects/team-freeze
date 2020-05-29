@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from "axios";
+import User from'../components/User';
 import {
     //  BrowserRouter as Router, 
-    Link, 
+    Link,
     // Route 
 } from "react-router-dom";
-//import user component
 
 
 class Registration extends React.Component {
@@ -32,9 +32,11 @@ class Registration extends React.Component {
         axios.get(url).then(response => this.setState({ registration: response.data }));
     };
 
-    
+
     render() {
+
         return (
+
             <div>
                 <ul className="header" >
                     <li>
@@ -51,42 +53,43 @@ class Registration extends React.Component {
                     </li>
                 </ul>
 
+                <div>
+                    <User />
+                </div>
 
                 {/* render user component < User/> */}
-                
+
                 {/* create a form to register uesrs  */}
-                {/* <div className="center">
+                 {/* <div className="center">
                     <h2>Registration</h2>
                     <p>To Register, Please complete the below Items.</p>
                     <form >
                         <select name="Role">
-                            <option selected value="S">Student</option>
+                            <option defaultValue="S">Student</option>
                             <option value="T">Teacher</option>
                             <option value="P">Parent</option>
                         </select><br></br>
 
                         <div>
-                            <label><input type="text" placeholder="First name" name="firstName" /> </label>
+                            <label><input type="text" placeholder="First name" autoComplete="firstName" /> </label>
                         </div>
                         <div>
-                            <label><input type="text" placeholder="Last Name" name="lastName" /></label>
+                            <label><input type="text" placeholder="Last Name" autoComplete="lastName" /></label>
                         </div>
                         <div>
-                            <label> <input type="text" placeholder="User Name" name="username" /></label>
+                            <label> <input type="text" placeholder="User Name" autoComplete="username" /></label>
                         </div>
                         <div>
-                            <label><input type="password" placeholder="Password" name="password" /></label>
+                            <label><input type="password" placeholder="Password" autoComplete="password" /></label>
                         </div>
-                        {/* <input placeholder="First name"></input><br></br> */}
-                        {/* <input placeholder="Last Name"></input><br></br> */}
-                        {/* <input placeholder="User Name"></input><br></br> */}
-                        {/* <input placeholder="Password"></input><br></br> */}
-                        {/* <input type="submit" value="register" />
+                        <input placeholder="First name"></input>
+                        <br></br>
+                
 
-                    </form> */}
+                    </form>
 
 
-                {/* </div> */}
+                </div> */}
 
             </div>
         )
