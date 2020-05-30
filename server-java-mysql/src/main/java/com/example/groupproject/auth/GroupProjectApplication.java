@@ -1,4 +1,4 @@
-package com.example.groupproject;
+package com.example.groupproject.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
