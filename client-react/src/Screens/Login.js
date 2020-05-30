@@ -21,7 +21,7 @@ class Login extends React.Component {
 
   getData = () => {
     // Java Spring Boot uses port 8080
-    let url = "http://localhost:8080/tasks";
+    let url = "http://localhost:8080/login";
 
     // C# dotnetcore uses port 5000
     //let url = "http://localhost:5000/projects";

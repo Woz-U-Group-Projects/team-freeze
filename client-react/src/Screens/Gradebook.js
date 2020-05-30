@@ -9,10 +9,10 @@ import {
 
 
 
-class Teacher extends React.Component {
+class Gradebook extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { teacher: [] };
+        this.state = { gradebook: [] };
         this.taskName = React.createRef();
     }
 
@@ -23,14 +23,14 @@ class Teacher extends React.Component {
 
     getData = () => {
         // Java Spring Boot uses port 8080
-        let url = "http://localhost:8080/tasks";
+        let url = "http://localhost:8080/gradebook";
 
         // C# dotnetcore uses port 5000
         //let url = "http://localhost:5000/projects";
 
         // Express uses port 3001 (react uses 3000)
         // let url = "http://localhost:3001/tasks";
-        axios.get(url).then(response => this.setState({ teacher: response.data }));
+        axios.get(url).then(response => this.setState({ gradebook: response.data }));
     };
 
 
@@ -69,4 +69,4 @@ class Teacher extends React.Component {
 }
 
 
-export default Teacher;
+export default Gradebook;

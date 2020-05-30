@@ -25,7 +25,7 @@ class Home extends React.Component {
 
     getData = () => {
         // Java Spring Boot uses port 8080
-        let url = "http://localhost:8080/tasks";
+        let url = "http://localhost:8080/home";
 
         // C# dotnetcore uses port 5000
         //let url = "http://localhost:5000/projects";
@@ -48,12 +48,15 @@ class Home extends React.Component {
                         <li>
                             <Link to="/">Home</Link>
                         </li>
-                        {/* <li>
-                        <Link to="/Login">Login</Link>
-                        </li> */}
-                        {/* <li>
-                         <Link to="/Registration">Registration</Link>
-                        </li> */}
+                        <li>
+                        <Link to="/Teacher">Teacher</Link>
+                        </li>
+                        <li>
+                         <Link to="/Student">Student</Link>
+                        </li>
+                        <li>
+                            <Link to="/Parent">parent</Link>
+                        </li>
                         <li>
                             <Link to="/">Log Off</Link>
                         </li>
