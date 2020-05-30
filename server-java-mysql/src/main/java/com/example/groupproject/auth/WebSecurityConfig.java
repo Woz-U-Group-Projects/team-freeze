@@ -1,13 +1,13 @@
 package com.example.groupproject.auth;
 
-import static com.example.groupproject.auth.AuthConstants.*;
+//import static com.example.groupproject.auth.AuthConstants.*;
 
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 
-import org.springframework.http.HttpMethod;
+//import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.*;
