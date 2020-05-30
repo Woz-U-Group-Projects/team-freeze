@@ -17,15 +17,6 @@ public class User {
 	private String firstname;
 	private String lastname;
 	private String username;
-	private String password;
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
 	private String role;
 	private String gradelevel;
 
