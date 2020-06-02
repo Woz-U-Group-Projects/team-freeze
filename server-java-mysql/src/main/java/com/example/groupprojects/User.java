@@ -1,6 +1,7 @@
 package com.example.groupprojects;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,19 +13,26 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
+	@Column
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
+	@Column(name = "firstname")
 	private String firstname;
-
+	
+	@Column(name = "lastname")
 	private String lastname;
 
+	@Column(name = "username")
 	private String username;
 
+	@Column(name = "password")
 	private String password;
 
+	@Column(name = "role")
 	private String role;
 
+	@Column(name = "gradelevel")
 	private String gradelevel;
 
 	public Long getId() {
