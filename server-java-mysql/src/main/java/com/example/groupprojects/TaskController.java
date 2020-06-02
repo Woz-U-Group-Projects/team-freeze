@@ -1,4 +1,4 @@
-package com.example.groupproject.auth;
+package com.example.groupprojects;
 
 import java.util.List;
 

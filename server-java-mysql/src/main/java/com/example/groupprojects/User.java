@@ -1,6 +1,6 @@
-package com.example.groupproject.models;
+package com.example.groupprojects;
 
-import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,28 +13,26 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long userid;
-	private String firstname;
-	private String lastname;
-	private String username;
-	private String password;
-	public String getPassword() {
-		return password;
-	}
+	private Long id;
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+	private String firstname;
+
+	private String lastname;
+
+	private String username;
+
+	private String password;
 
 	private String role;
+
 	private String gradelevel;
 
-	public Long getUserid() {
-		return userid;
+	public Long getId() {
+		return id;
 	}
 
-	public void setUserid(Long userid) {
-		this.userid = userid;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getFirstname() {
@@ -61,6 +59,14 @@ public class User {
 		this.username = username;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getRole() {
 		return role;
 	}
@@ -75,17 +81,6 @@ public class User {
 
 	public void setGradelevel(String gradelevel) {
 		this.gradelevel = gradelevel;
-	}
-
-	@Column(columnDefinition = "boolean default false")
-	private boolean complete;
-
-	public boolean getComplete() {
-		return this.complete;
-	}
-
-	public void setComplete(boolean complete) {
-		this.complete = complete;
 	}
 
 }

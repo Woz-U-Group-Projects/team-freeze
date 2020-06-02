@@ -1,4 +1,4 @@
-package com.example.groupproject.auth;
+package com.example.groupprojects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "task")
+@Table(name = "tasks")
 public class Task {
 
   @Id
