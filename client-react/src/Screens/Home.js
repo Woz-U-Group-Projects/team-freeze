@@ -43,16 +43,16 @@ class Home extends React.Component {
     render() {
         if (!this.props.token || this.props.token === "") {
             return (
-                <div className='center'>
+                <div >
                     <ul className="header" >
                         <li>
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                        <Link to="/Teacher">Teacher</Link>
+                            <Link to="/Teacher">Teacher</Link>
                         </li>
                         <li>
-                         <Link to="/Student">Student</Link>
+                            <Link to="/Student">Student</Link>
                         </li>
                         <li>
                             <Link to="/Parent">parent</Link>
@@ -60,34 +60,38 @@ class Home extends React.Component {
                         <li>
                             <Link to="/">Log Off</Link>
                         </li>
-                    </ul>                    
+                    </ul>
+                    <div className="container ">
+                        <div className="row">
+                            <div className="col-sm-4 offset-sm-4">
+                                
+                                <h2 className="text-center">Home</h2>
+                                <p class="text-center">Welcome to the At Home Learning  portal</p>
+                                
 
-                    <h2>Home</h2>
-                    <p>Welcome to the At Home Learning  portal</p>
-
-
-                    <div>
-                        <div>
-                            {/* <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div> */}
-                            <div>
-                                <label htmlFor="username">Username:</label>
-                                <input type="text" id="username" name="username" onChange={this.props.onUsernameChange} />
-                            </div>
-                            <div>
-                                <label htmlFor="password">Password:</label>
-                                <input type="password" id="password" name="password" onChange={this.props.onPasswordChange} />
-                            </div>
-                            <div>
-                                <button onClick={this.props.onLogin}>Submit</button>
-                                <button onClick={this.register}>Register</button>
+                                <div className="form-group-row" >
+                                    {/* <div style={{ color: "red" }}>{(this.props.error ? this.props.error : '')}</div> */}
+                                    <div className="form-group row">
+                                        {/* <label htmlFor="username">Username:</label> */}
+                                        <input type="text" class="form-control" id="username" placeholder="User Name" name="username" onChange={this.props.onUsernameChange} />
+                                    </div>
+                                    <div className="form-group row">
+                                        {/* <label htmlFor="password">Password:</label> */}
+                                        <input type="password" class="form-control" id="password" placeholder="password" name="password" onChange={this.props.onPasswordChange} />
+                                    </div>
+                                    <div className="text-center">
+                                        <button class="btn btn-primary btn-lg" onClick={this.props.onLogin}>Submit</button>
+                                        <button class="btn btn-secondary" onClick={this.register}>Register</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div >
+                </div >
 
 
             )
-        } else { return(<div>Logged In</div>); }
+        } else { return (<div>Logged In</div>); }
     }
 }
 

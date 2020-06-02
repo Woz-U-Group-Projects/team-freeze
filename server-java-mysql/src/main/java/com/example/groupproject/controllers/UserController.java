@@ -43,7 +43,7 @@ public class UserController {
     User foundUser = userRepository.findById(id).orElse(null);
     if (foundUser != null) {
     	foundUser.setUsername(user.getUsername());
-    	foundUser.setComplete(user.getComplete());
+//    	foundUser.setComplete(user.getComplete());
       userRepository.save(foundUser);
       return foundUser;
     }

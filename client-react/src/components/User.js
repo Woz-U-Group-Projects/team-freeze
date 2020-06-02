@@ -59,47 +59,62 @@ class User extends React.Component {
 
     };
 
-    
+
 
     render() {
         return (
-        <div className="center">
-            <h2>Registration</h2>
-            <p>To Register, Please complete the below Items.</p>
-            {/* <input ref={this.userName} /> */}
+            <div className="container">
 
-            <form >
-                <select 
-                // select={value.toString()} 
-                ref={this.role}>
-                    <option defaultValue="S">Student</option>
-                    <option value="T">Teacher</option>
-                    <option value="P">Parent</option>
-                    console.log();
-                </select><br></br>
+                <div className="col-sm-4 offset-sm-4" >
 
-                <div>
-                    <label><input ref={this.firstName} type="text" placeholder="First name" name="firstName" /> </label>
-                </div>
-                <div>
-                    <label><input ref={this.lastName} type="text" placeholder="Last Name" name="lastName" /></label>
-                </div>
-                <div >
-                    <label> <input ref={this.username} type="text" placeholder="User Name" autoComplete="username" /></label>
-                </div>
-                <div>
-                    <label><input ref={this.password} type="password" placeholder="Password" autoComplete="password" /></label>
-                </div>
-                <div>
-                    <label><input ref={this.password} type="password" placeholder=" re-enter Password" autoComplete="password" /></label>
-                </div>
-                <br></br>
-                <button type="submit" className="btn btn-primary" onClick={this.addUser}>Register</button>
+                    <h2 className="text-center">Registration</h2>
+                    <p className="text-center">To Register, Please complete the below Items.</p>
+                    {/* <input ref={this.userName} /> */}
 
-            </form>
+                    <div className="form-row">
+                        <div className="text-center">
+                            <form>
+                                <div className="form-group ">
+                                    <select
+                                        // select={value.toString()} 
+                                        ref={this.role}>
+                                        <option defaultValue="S">Student</option>
+                                        <option value="T">Teacher</option>
+                                        <option value="P">Parent</option>
 
+                                    </select>
+                                    <br></br>
+                                </div>
 
-        </div>
+                                <div >
+                                    <div className="form-group">
+                                        <label><input className="form-control" ref={this.firstName} type="text" placeholder="First name" name="firstName" /> </label>
+                                    </div>
+                                    <div className="form-group">
+                                        <label><input className="form-control" ref={this.lastName} type="text" placeholder="Last Name" name="lastName" /></label>
+                                    </div>
+                                    <div className="form-group">
+                                        <label> <input className="form-control" ref={this.username} type="text" placeholder="User Name" autoComplete="username" /></label>
+                                    </div>
+                                    <div className="form-group ">
+                                        <label><input className="form-control" ref={this.password} type="password" placeholder="Password" autoComplete="password" /></label>
+                                    </div>
+                                    <div className="form-group ">
+                                        <label><input className="form-control" ref={this.password} type="password" placeholder=" re-enter Password" autoComplete="password" /></label>
+                                    </div>
+                                    <br></br>
+                                    <div className="text-center">
+                                        <button type="submit" className="btn btn-primary" onClick={this.addUser}>Register</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         );
     }
 }

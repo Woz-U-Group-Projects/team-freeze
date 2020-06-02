@@ -3,9 +3,9 @@ import axios from "axios";
 // import CreateLesson from './CreateLesson'
 // import CurrentLessonPlan from './CurrentLessonPlan'
 // import Gradebook from './Gradebook'
-import { 
+import {
     // BrowserRouter as Router, 
-    Link, 
+    Link,
     // Route 
 } from "react-router-dom";
 
@@ -15,7 +15,14 @@ import {
 class Teacher extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { teacher: [] };
+        this.state = {
+            teacher: [
+                { id: 1, name: 'Thomas', Math: "In_Progress", Reading: "In_Progress", Social_Studies: "Not_Started", Science:"Not_Started"},
+                { id: 2, name: 'William', Math: "Not_Started", Reading: "In_Progress" ,Social_Studies: "Not_Started", Science:"Completed"},
+                { id: 3, name: 'Gueniver', Math: "Completed", Reading: "Completed" ,Social_Studies: "Not_Started", Science:"Completed"},
+                { id: 4, name: 'Molly', Math: "In_Progress", Reading: "Not_Started",Social_Studies: "Not_Started" , Science:"Completed"}
+            ]
+        };
         this.taskName = React.createRef();
     }
 
@@ -37,11 +44,34 @@ class Teacher extends React.Component {
     };
 
 
+    renderTableHeader() {
+        let header = Object.keys(this.state.teacher[0])
+        return header.map((key, index) => {
+            return <th key={index}>{key.toUpperCase()}</th>
+        })
+    }
+
+    renderTableData() {
+        return this.state.teacher.map((student, index) => {
+            const { id, name, Math, Reading, Social_Studies, Science } = student //destructuring
+            return (
+                <tr key={id}>
+                    <td>{id}</td>
+                    <td>{name}</td>
+                    <td>{Math}</td>
+                    <td>{Reading}</td>
+                    <td>{Social_Studies}</td>
+                    <td>{Science}</td>
+                </tr>
+            )
+        })
+    }
+
 
     render() {
 
         return (
-            <div>
+            <div className="container">
                 <div>
                     <ul className="header" >
                         <li>
@@ -52,10 +82,10 @@ class Teacher extends React.Component {
                         </li>
                         <li>
                             <Link to="/CreateLesson">Create Lesson</Link>
-                        </li>                        
+                        </li>
                         <li>
                             <Link to="/CurrentLessonPlan">Current Lesson Plan</Link>
-                        </li>                        
+                        </li>
                         <li>
                             <Link to="/Gradebook">Grade Book</Link>
                         </li>
@@ -64,8 +94,21 @@ class Teacher extends React.Component {
                         </li>
                     </ul>
                 </div>
-                <div className='center'>
-                    <h2>Teacher Page</h2>
+                <div >
+                    <div className='center'>
+
+                        <h2>Teacher Page</h2>
+
+                    </div>
+                    {/* <div className="" > */}
+
+                        <table id='students'>
+                            <tbody>
+                                <tr>{this.renderTableHeader()}</tr>
+                                {this.renderTableData()}
+                            </tbody>
+                        </table>
+                    {/* </div> */}
 
                 </div>
             </div>
