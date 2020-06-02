@@ -39,12 +39,12 @@ public class UserController {
   public User updateProject(@PathVariable Long id, @RequestBody User user) {
     User foundUser = userRepository.findById(id).orElse(null);
     if (foundUser != null) {
-    	foundUser.setFirstname(user.getFirstname());
-    	foundUser.setLastname(user.getLastname());
-    	foundUser.setUsername(user.getUsername());
-    	foundUser.setPassword(user.getPassword());
-    	foundUser.setRole(user.getRole());
-    	foundUser.setGradelevel(user.getGradelevel());
+//    	foundUser.setFirstname(user.getFirstname());
+//    	foundUser.setLastname(user.getLastname());
+//    	foundUser.setUsername(user.getUsername());
+//    	foundUser.setPassword(user.getPassword());
+//    	foundUser.setRole(user.getRole());
+//    	foundUser.setGradelevel(user.getGradelevel());
       userRepository.save(foundUser);
       return foundUser;
     }
