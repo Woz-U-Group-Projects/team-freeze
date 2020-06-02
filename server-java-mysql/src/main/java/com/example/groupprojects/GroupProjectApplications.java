@@ -1,4 +1,4 @@
-package com.example.groupproject.auth;
+package com.example.groupprojects;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,11 +8,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages={"com.example.groupproject"})
-public class GroupProjectApplication {
+@ComponentScan(basePackages={"com.example.groupprojects"})
+public class GroupProjectApplications {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GroupProjectApplication.class, args);
+		SpringApplication.run(GroupProjectApplications.class, args);
 	}
 	
 	@Bean
