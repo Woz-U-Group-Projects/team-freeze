@@ -47,8 +47,6 @@ public class UserController {
 =======
     	foundUser.setPassword(user.getPassword());
     	foundUser.setRole(user.getRole());
-    	foundUser.setGradelevel(user.getGradelevel());
->>>>>>> 64a778bceecf6f1c5f955e1a599ae59968009b60:server-java-mysql/src/main/java/com/example/groupprojects/UserController.java
       userRepository.save(foundUser);
       return foundUser;
     }

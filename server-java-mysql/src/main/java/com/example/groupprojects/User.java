@@ -1,6 +1,5 @@
 package com.example.groupprojects;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,7 +23,7 @@ public class User {
 	@Column(name = "firstname")
 >>>>>>> 64a778bceecf6f1c5f955e1a599ae59968009b60:server-java-mysql/src/main/java/com/example/groupprojects/User.java
 	private String firstname;
-	
+
 	@Column(name = "lastname")
 	private String lastname;
 
@@ -44,9 +43,6 @@ public class User {
 
 	@Column(name = "role")
 	private String role;
-
-	@Column(name = "gradelevel")
-	private String gradelevel;
 
 	public Long getId() {
 		return id;
@@ -99,16 +95,4 @@ public class User {
 		this.role = role;
 	}
 
-<<<<<<< HEAD:server-java-mysql/src/main/java/com/example/groupproject/models/User.java
-	
-=======
-	public String getGradelevel() {
-		return gradelevel;
-	}
-
-	public void setGradelevel(String gradelevel) {
-		this.gradelevel = gradelevel;
-	}
-
->>>>>>> 64a778bceecf6f1c5f955e1a599ae59968009b60:server-java-mysql/src/main/java/com/example/groupprojects/User.java
 }
