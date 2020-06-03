@@ -1,6 +1,5 @@
 package com.example.groupprojects;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,7 +18,7 @@ public class User {
 
 	@Column(name = "firstname")
 	private String firstname;
-	
+
 	@Column(name = "lastname")
 	private String lastname;
 
@@ -31,9 +30,6 @@ public class User {
 
 	@Column(name = "role")
 	private String role;
-
-	@Column(name = "gradelevel")
-	private String gradelevel;
 
 	public Long getId() {
 		return id;
@@ -81,14 +77,6 @@ public class User {
 
 	public void setRole(String role) {
 		this.role = role;
-	}
-
-	public String getGradelevel() {
-		return gradelevel;
-	}
-
-	public void setGradelevel(String gradelevel) {
-		this.gradelevel = gradelevel;
 	}
 
 }
