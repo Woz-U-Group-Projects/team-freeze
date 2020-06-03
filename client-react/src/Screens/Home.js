@@ -39,6 +39,7 @@ class Home extends React.Component {
         window.location.href = "./Registration";
     }
 
+    
 
     render() {
         if (!this.props.token || this.props.token === "") {
