@@ -44,7 +44,6 @@ public class UserController {
     	foundUser.setUsername(user.getUsername());
     	foundUser.setPassword(user.getPassword());
     	foundUser.setRole(user.getRole());
-    	foundUser.setGradelevel(user.getGradelevel());
       userRepository.save(foundUser);
       return foundUser;
     }
