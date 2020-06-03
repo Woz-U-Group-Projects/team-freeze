@@ -37,7 +37,7 @@ class Registration extends React.Component {
 
         return (
 
-            <div>
+            <div className="container">
                 <ul className="header" >
                     <li>
                         <Link to="/">Home</Link>

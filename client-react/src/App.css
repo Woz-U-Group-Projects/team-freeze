@@ -80,9 +80,9 @@ and (-webkit-min-device-pixel-ratio: 2)
 and (min-resolution: 192dpi) {
 }
 
-/* .home {
+.home {
 text-align: center;  
-} */
+}
 
 .center {
   text-align: center; 

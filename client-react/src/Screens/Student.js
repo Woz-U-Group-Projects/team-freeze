@@ -34,7 +34,7 @@ class Student extends React.Component {
     render() {
         return (
             //create a student dashboard 
-            <div>
+            <div className="container">
                 <ul className="header" >
                         <li>
                             <Link to="/">Home</Link>

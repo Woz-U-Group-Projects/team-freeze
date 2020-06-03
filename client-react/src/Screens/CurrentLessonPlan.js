@@ -37,7 +37,7 @@ class CurrentLessonPlan extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="container">
                 <div>
                     <ul className="header" >
                         <li>

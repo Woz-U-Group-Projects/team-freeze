@@ -56,7 +56,7 @@ class App extends React.Component {
   // function App() {
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="App">
           <header className="App-header">
             {(!this.state.token || this.state.token === "")
